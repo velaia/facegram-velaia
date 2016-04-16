@@ -54,6 +54,9 @@
 		396ABC3D1CC2957F008E4C12 /* VelaiaFacegram */ = {
 			isa = PBXGroup;
 			children = (
+				396ABC501CC29C1F008E4C12 /* View */,
+				396ABC511CC29C1F008E4C12 /* Model */,
+				396ABC521CC29C1F008E4C12 /* Controller */,
 				396ABC3E1CC2957F008E4C12 /* AppDelegate.swift */,
 				396ABC401CC2957F008E4C12 /* ViewController.swift */,
 				396ABC421CC2957F008E4C12 /* Main.storyboard */,
@@ -62,6 +65,27 @@
 				396ABC4A1CC2957F008E4C12 /* Info.plist */,
 			);
 			path = VelaiaFacegram;
+			sourceTree = "<group>";
+		};
+		396ABC501CC29C1F008E4C12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		396ABC511CC29C1F008E4C12 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		396ABC521CC29C1F008E4C12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +120,7 @@
 				TargetAttributes = {
 					396ABC3A1CC2957F008E4C12 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 7Y3299JNAG;
 					};
 				};
 			};
@@ -249,10 +274,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = VelaiaFacegram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.velaia.VelaiaFacegram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +288,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = VelaiaFacegram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.velaia.VelaiaFacegram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
