@@ -14,6 +14,7 @@
 		396ABC491CC2957F008E4C12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 396ABC471CC2957F008E4C12 /* LaunchScreen.storyboard */; };
 		396ABC541CC7E6D0008E4C12 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396ABC531CC7E6D0008E4C12 /* PostModel.swift */; };
 		396ABC561CC7E913008E4C12 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396ABC551CC7E913008E4C12 /* ProfileModel.swift */; };
+		396ABC581CC95413008E4C12 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396ABC571CC95413008E4C12 /* ProfileController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		396ABC4A1CC2957F008E4C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		396ABC531CC7E6D0008E4C12 /* PostModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		396ABC551CC7E913008E4C12 /* ProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		396ABC571CC95413008E4C12 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		396ABC521CC29C1F008E4C12 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				396ABC571CC95413008E4C12 /* ProfileController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				396ABC581CC95413008E4C12 /* ProfileController.swift in Sources */,
 				396ABC411CC2957F008E4C12 /* ViewController.swift in Sources */,
 				396ABC541CC7E6D0008E4C12 /* PostModel.swift in Sources */,
 				396ABC3F1CC2957F008E4C12 /* AppDelegate.swift in Sources */,
