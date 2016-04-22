@@ -687,13 +687,13 @@
         <!--facegram-->
         <scene sceneID="cUv-qq-lsP">
             <objects>
-                <tableViewController id="MVl-Qi-NOE" sceneMemberID="viewController">
+                <tableViewController id="MVl-Qi-NOE" customClass="FeedController" customModule="VelaiaFacegram" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="pCp-3a-FZt">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="208" id="A31-uj-Av3">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="208" id="A31-uj-Av3" customClass="PostCell" customModule="VelaiaFacegram" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="208"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A31-uj-Av3" id="i1V-iG-bsJ">
@@ -847,6 +847,10 @@
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="captionLabel" destination="elk-0m-4H8" id="qjV-rR-mGD"/>
+                                    <outlet property="imgView" destination="1AY-nf-I5W" id="sse-Hd-7Tr"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
