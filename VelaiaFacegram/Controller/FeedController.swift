@@ -41,6 +41,27 @@ class FeedController: UITableViewController {
         return cell
     }
     
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let post = Post.feed![postIndex(section)]
+        let headerCell = tableView.dequeueReusableCellWithIdentifier("PostHeaderCell") as? PostHeaderCell
+        
+        if post.creator == Profile.currentUser?.username {
+            headerCell!.profilePicture.image = Profile.currentUser?.picture
+        } else {
+            // TODO Set to creator's image
+        }
+        headerCell?.usernameButton.setTitle(post.creator, forState: .Normal)
+        
+        let headerView = UIView(frame: headerCell!.frame)
+        headerView.addSubview(headerCell!)
+        
+        return headerView
+    }
+    
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 48
+    }
+    
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         let post = Post.feed![postIndex(indexPath.section)]
         if let img = post.image {

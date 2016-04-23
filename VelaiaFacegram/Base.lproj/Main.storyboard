@@ -852,6 +852,95 @@
                                     <outlet property="imgView" destination="1AY-nf-I5W" id="sse-Hd-7Tr"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostHeaderCell" rowHeight="48" id="STA-2Z-eby" customClass="PostHeaderCell" customModule="VelaiaFacegram" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="208"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="STA-2Z-eby" id="B0O-tP-cqL">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="207"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Fn-bv-dw8">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="32" id="2Z4-T3-egp"/>
+                                                <constraint firstAttribute="height" constant="32" id="eXN-lR-IG8"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="2Z4-T3-egp"/>
+                                                    <exclude reference="eXN-lR-IG8"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="2Z4-T3-egp"/>
+                                                    <include reference="eXN-lR-IG8"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYk-Ld-RzF">
+                                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="32" id="gsq-pq-cnv"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                            <state key="normal" title="Username">
+                                                <color key="titleColor" red="0.070588235294117646" green="0.33725490196078434" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="gsq-pq-cnv"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="gsq-pq-cnv"/>
+                                                </mask>
+                                            </variation>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="4Fn-bv-dw8" firstAttribute="leading" secondItem="B0O-tP-cqL" secondAttribute="leadingMargin" id="4LN-hF-2eb"/>
+                                        <constraint firstItem="CYk-Ld-RzF" firstAttribute="centerX" secondItem="B0O-tP-cqL" secondAttribute="centerX" id="7zX-gi-S9M"/>
+                                        <constraint firstItem="4Fn-bv-dw8" firstAttribute="top" secondItem="CYk-Ld-RzF" secondAttribute="top" id="DPO-pu-9Iv"/>
+                                        <constraint firstItem="4Fn-bv-dw8" firstAttribute="top" secondItem="B0O-tP-cqL" secondAttribute="topMargin" id="RTv-RU-8BC"/>
+                                        <constraint firstItem="4Fn-bv-dw8" firstAttribute="centerY" secondItem="B0O-tP-cqL" secondAttribute="centerY" id="Vfk-kh-HOY"/>
+                                        <constraint firstItem="CYk-Ld-RzF" firstAttribute="leading" secondItem="4Fn-bv-dw8" secondAttribute="trailing" constant="8" symbolic="YES" id="WKr-w6-lEd"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="4Fn-bv-dw8"/>
+                                            <exclude reference="CYk-Ld-RzF"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <exclude reference="4LN-hF-2eb"/>
+                                            <exclude reference="DPO-pu-9Iv"/>
+                                            <exclude reference="RTv-RU-8BC"/>
+                                            <exclude reference="Vfk-kh-HOY"/>
+                                            <exclude reference="7zX-gi-S9M"/>
+                                            <exclude reference="WKr-w6-lEd"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=regular-widthClass=compact">
+                                        <mask key="subviews">
+                                            <include reference="4Fn-bv-dw8"/>
+                                            <include reference="CYk-Ld-RzF"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <include reference="4LN-hF-2eb"/>
+                                            <include reference="DPO-pu-9Iv"/>
+                                            <include reference="RTv-RU-8BC"/>
+                                            <exclude reference="Vfk-kh-HOY"/>
+                                            <include reference="7zX-gi-S9M"/>
+                                            <include reference="WKr-w6-lEd"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="profilePicture" destination="4Fn-bv-dw8" id="rxJ-eu-8zz"/>
+                                    <outlet property="usernameButton" destination="CYk-Ld-RzF" id="4Ly-bg-dYK"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="MVl-Qi-NOE" id="Sj6-4P-pan"/>
