@@ -227,7 +227,7 @@
         <!--View Controller-->
         <scene sceneID="8lN-aY-Jbh">
             <objects>
-                <viewController id="UPQ-SR-8RG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CameraPopup" id="UPQ-SR-8RG" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jdQ-pt-fgZ"/>
                         <viewControllerLayoutGuide type="bottom" id="4Jd-AL-ReH"/>
@@ -853,10 +853,10 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostHeaderCell" rowHeight="48" id="STA-2Z-eby" customClass="PostHeaderCell" customModule="VelaiaFacegram" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="208"/>
+                                <rect key="frame" x="0.0" y="300" width="600" height="48"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="STA-2Z-eby" id="B0O-tP-cqL">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="207"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="47"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Fn-bv-dw8">
@@ -913,12 +913,12 @@
                                             <exclude reference="CYk-Ld-RzF"/>
                                         </mask>
                                         <mask key="constraints">
+                                            <exclude reference="7zX-gi-S9M"/>
+                                            <exclude reference="WKr-w6-lEd"/>
                                             <exclude reference="4LN-hF-2eb"/>
                                             <exclude reference="DPO-pu-9Iv"/>
                                             <exclude reference="RTv-RU-8BC"/>
                                             <exclude reference="Vfk-kh-HOY"/>
-                                            <exclude reference="7zX-gi-S9M"/>
-                                            <exclude reference="WKr-w6-lEd"/>
                                         </mask>
                                     </variation>
                                     <variation key="heightClass=regular-widthClass=compact">
@@ -927,12 +927,12 @@
                                             <include reference="CYk-Ld-RzF"/>
                                         </mask>
                                         <mask key="constraints">
+                                            <include reference="7zX-gi-S9M"/>
+                                            <include reference="WKr-w6-lEd"/>
                                             <include reference="4LN-hF-2eb"/>
                                             <include reference="DPO-pu-9Iv"/>
                                             <include reference="RTv-RU-8BC"/>
                                             <exclude reference="Vfk-kh-HOY"/>
-                                            <include reference="7zX-gi-S9M"/>
-                                            <include reference="WKr-w6-lEd"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>

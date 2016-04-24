@@ -16,6 +16,7 @@
 		396ABC561CC7E913008E4C12 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396ABC551CC7E913008E4C12 /* ProfileModel.swift */; };
 		396ABC581CC95413008E4C12 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396ABC571CC95413008E4C12 /* ProfileController.swift */; };
 		396ABC5A1CC9CA84008E4C12 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396ABC591CC9CA84008E4C12 /* FeedController.swift */; };
+		399925A81CCD106100F39E09 /* CenterTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399925A71CCD106100F39E09 /* CenterTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		396ABC551CC7E913008E4C12 /* ProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		396ABC571CC95413008E4C12 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		396ABC591CC9CA84008E4C12 /* FeedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		399925A71CCD106100F39E09 /* CenterTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				396ABC571CC95413008E4C12 /* ProfileController.swift */,
 				396ABC591CC9CA84008E4C12 /* FeedController.swift */,
+				399925A71CCD106100F39E09 /* CenterTabBarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				396ABC541CC7E6D0008E4C12 /* PostModel.swift in Sources */,
 				396ABC3F1CC2957F008E4C12 /* AppDelegate.swift in Sources */,
 				396ABC561CC7E913008E4C12 /* ProfileModel.swift in Sources */,
+				399925A81CCD106100F39E09 /* CenterTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +337,7 @@
 				396ABC4F1CC2957F008E4C12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
