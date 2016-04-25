@@ -224,10 +224,10 @@
             </objects>
             <point key="canvasLocation" x="2853" y="744.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Camera Controller-->
         <scene sceneID="8lN-aY-Jbh">
             <objects>
-                <viewController storyboardIdentifier="CameraPopup" id="UPQ-SR-8RG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CameraPopup" id="UPQ-SR-8RG" customClass="CameraController" customModule="VelaiaFacegram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jdQ-pt-fgZ"/>
                         <viewControllerLayoutGuide type="bottom" id="4Jd-AL-ReH"/>
@@ -256,6 +256,9 @@
                                         <include reference="P0Z-LC-XtY"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="dismissPhotoPicker:" destination="UPQ-SR-8RG" eventType="touchUpInside" id="7nj-4X-TMe"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Photo Selected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgy-Ww-qBR">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -327,6 +330,9 @@
                                         <include reference="KhN-MU-fbf"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="selectPhoto:" destination="UPQ-SR-8RG" eventType="touchUpInside" id="Eg0-pK-cED"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7r-Wg-82T">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -335,6 +341,9 @@
                                 <state key="normal" title="Take Photo">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="takePhoto:" destination="UPQ-SR-8RG" eventType="touchUpInside" id="nzw-WM-ag4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -417,6 +426,10 @@
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="camera" id="TQ8-Z9-RQi"/>
+                    <connections>
+                        <outlet property="selectedImageView" destination="uXy-Wi-i04" id="8kx-vX-J14"/>
+                        <outlet property="sourceLabel" destination="rgy-Ww-qBR" id="ocd-O4-JmH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TIZ-zH-79a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
