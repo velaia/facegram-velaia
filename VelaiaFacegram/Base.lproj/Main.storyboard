@@ -435,10 +435,10 @@
             </objects>
             <point key="canvasLocation" x="1017" y="84"/>
         </scene>
-        <!--View Controller-->
+        <!--Caption Controller-->
         <scene sceneID="NKS-rK-a9b">
             <objects>
-                <viewController id="vB5-37-Z5s" sceneMemberID="viewController">
+                <viewController id="vB5-37-Z5s" customClass="CaptionController" customModule="VelaiaFacegram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L3n-xz-HMt"/>
                         <viewControllerLayoutGuide type="bottom" id="sSl-2o-caN"/>
@@ -469,6 +469,9 @@
                                         <include reference="OhX-2q-3lm"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="backPressed:" destination="vB5-37-Z5s" eventType="touchUpInside" id="79O-8T-8fi"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Caption" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWi-c0-H08">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -580,6 +583,9 @@
                                                 <include reference="5Gb-cl-Wdx"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="submitPressed:" destination="vB5-37-Z5s" eventType="touchUpInside" id="QXO-PQ-Suu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -622,6 +628,7 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="WRp-bN-s0a" firstAttribute="top" secondItem="TWi-c0-H08" secondAttribute="bottom" constant="17" id="2BK-DC-eQI"/>
                             <constraint firstItem="sSl-2o-caN" firstAttribute="top" secondItem="WRp-bN-s0a" secondAttribute="bottom" id="DqQ-pJ-rF3"/>
@@ -672,16 +679,28 @@
                                 <include reference="so7-EF-1Lc"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="qhH-XY-aAd" appends="YES" id="UDM-0X-m33"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="captionText" destination="gcd-fw-Wqi" id="F0K-Em-kZl"/>
+                        <outlet property="imagePreview" destination="jCJ-7a-UKW" id="g4y-uv-vMz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fmn-5p-6sG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="qhH-XY-aAd">
+                    <connections>
+                        <action selector="tap:" destination="vB5-37-Z5s" id="NW1-BH-a55"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1776" y="84"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Center Tab Bar Controller-->
         <scene sceneID="3Tk-vA-pVP">
             <objects>
-                <tabBarController id="WWD-gV-enZ" sceneMemberID="viewController">
+                <tabBarController id="WWD-gV-enZ" customClass="CenterTabBarController" customModule="VelaiaFacegram" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="8xU-mm-jGd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

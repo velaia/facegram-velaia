@@ -18,6 +18,7 @@
 		396ABC5A1CC9CA84008E4C12 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396ABC591CC9CA84008E4C12 /* FeedController.swift */; };
 		399925A81CCD106100F39E09 /* CenterTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399925A71CCD106100F39E09 /* CenterTabBarController.swift */; };
 		399925AA1CCD175A00F39E09 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399925A91CCD175A00F39E09 /* CameraController.swift */; };
+		399925AC1CCF308900F39E09 /* CaptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399925AB1CCF308900F39E09 /* CaptionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		396ABC591CC9CA84008E4C12 /* FeedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
 		399925A71CCD106100F39E09 /* CenterTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterTabBarController.swift; sourceTree = "<group>"; };
 		399925A91CCD175A00F39E09 /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		399925AB1CCF308900F39E09 /* CaptionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				396ABC591CC9CA84008E4C12 /* FeedController.swift */,
 				399925A71CCD106100F39E09 /* CenterTabBarController.swift */,
 				399925A91CCD175A00F39E09 /* CameraController.swift */,
+				399925AB1CCF308900F39E09 /* CaptionController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				396ABC581CC95413008E4C12 /* ProfileController.swift in Sources */,
 				396ABC5A1CC9CA84008E4C12 /* FeedController.swift in Sources */,
 				396ABC411CC2957F008E4C12 /* ViewController.swift in Sources */,
+				399925AC1CCF308900F39E09 /* CaptionController.swift in Sources */,
 				396ABC541CC7E6D0008E4C12 /* PostModel.swift in Sources */,
 				396ABC3F1CC2957F008E4C12 /* AppDelegate.swift in Sources */,
 				396ABC561CC7E913008E4C12 /* ProfileModel.swift in Sources */,
