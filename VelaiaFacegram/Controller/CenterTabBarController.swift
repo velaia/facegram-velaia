@@ -12,6 +12,9 @@ class CenterTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tabBar.tintColor = UIColor.whiteColor()
+        tabBar.barTintColor = UIColor(white: 0.25, alpha: 1)
+        tabBar.translucent = false
         
         let centerButton = UIButton(type: .Custom)
         let buttonImage = UIImage(named: "camera")

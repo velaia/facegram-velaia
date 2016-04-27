@@ -17,6 +17,7 @@ class ProfileController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         if let currentUser = Profile.currentUser {
+            navigationController?.navigationBar.topItem?.title = currentUser.username
             self.postsLabel.text = "\(currentUser.posts.count)" // "5" 5 - just a string containing the count of posts
             self.followersLabel.text = "\(currentUser.followers.count)"
             self.followingLabel.text = "\(currentUser.following.count)"

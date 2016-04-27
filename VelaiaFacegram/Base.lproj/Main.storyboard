@@ -33,7 +33,8 @@
                                         <exclude reference="wrK-Jx-HSk"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="72" width="80" height="80"/>
                                     <mask key="constraints">
                                         <include reference="P6o-4x-gYn"/>
                                         <include reference="wrK-Jx-HSk"/>
@@ -157,7 +158,8 @@
                                         <exclude reference="ohS-hr-bIA"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="108" y="72" width="278" height="80"/>
                                     <mask key="subviews">
                                         <include reference="gLe-8s-bZS"/>
                                         <include reference="ob5-wg-GuT"/>
@@ -991,9 +993,14 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d4z-fv-rQ9" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="profile" id="MpS-wP-njd"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2RB-5f-uDu">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="2RB-5f-uDu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.070588235289999995" green="0.33725490200000002" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1010,9 +1017,14 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="05y-7e-5Re" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="house" id="OcA-iC-Jgh"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DjE-MC-cSJ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="DjE-MC-cSJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.070588235294117646" green="0.33725490196078434" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
