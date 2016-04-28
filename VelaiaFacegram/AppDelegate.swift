@@ -7,6 +7,13 @@
 //
 
 import UIKit
+import Firebase
+
+let firebase = Firebase(url: "https://facegram-velaia.firebaseio.com")
+let usernameRef = firebase.childByAppendingPath("usernames")
+let profileRef = firebase.childByAppendingPath("profiles")
+let postRef = firebase.childByAppendingPath("posts")
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
