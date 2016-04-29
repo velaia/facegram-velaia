@@ -32,9 +32,13 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate, UINav
     
     func captionController(controller: CaptionController, didFinishWithCaption caption: String) {
         controller.dismissViewControllerAnimated(true, completion: nil)
-        let newPost = Post.init(creator: Profile.currentUser!.username, caption: caption, image: selectedImage)
-        Post.feed!.append(newPost)
-        Profile.currentUser!.posts.append(newPost)
+        guard let postImage = selectedImage else {
+            print("No Image Selected!")
+            return
+        }
+        let newPost = Post.init(id: nil, creator: Profile.currentUser!.username, caption: caption, image: postImage)
+        let uniquePostRef = postRef.childByAutoId() // Creates unique time-sensitive post id
+        uniquePostRef.setValue(newPost.dictValue())
         
         let tabBarController = self.presentingViewController as? UITabBarController
         tabBarController!.selectedIndex = 0 // Goes back to feed tab

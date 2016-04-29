@@ -25,8 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         let testUser = Profile.createUser("Johnny")
         Profile.currentUser = testUser
-        Post.feed = [Post]()
-        Post.feed?.append(Post.init(creator: "Johnny", caption: "A super fancy test post!", image: nil))
+
         
         return true
     }

@@ -64,10 +64,9 @@ class FeedController: UITableViewController {
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         let post = Post.feed![postIndex(indexPath.section)]
-        if let img = post.image {
-            let aspectRatio = img.size.height / img.size.width
-            return tableView.frame.size.width * aspectRatio + 80 // height accounting for buttons and caption
-        }
-        return 208 // default height
+        
+        let aspectRatio = post.image.size.height / post.image.size.width
+        return tableView.frame.size.width * aspectRatio + 80 // height accounting for buttons and caption
+        
     }
 }
