@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		394106311CD3B576007E1151 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394106301CD3B576007E1151 /* Extensions.swift */; };
 		394106331CD63327007E1151 /* TranslucentTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394106321CD63327007E1151 /* TranslucentTextField.swift */; };
+		394106351CD640D1007E1151 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394106341CD640D1007E1151 /* LoginController.swift */; };
 		396ABC3F1CC2957F008E4C12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396ABC3E1CC2957F008E4C12 /* AppDelegate.swift */; };
 		396ABC441CC2957F008E4C12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 396ABC421CC2957F008E4C12 /* Main.storyboard */; };
 		396ABC461CC2957F008E4C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 396ABC451CC2957F008E4C12 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		2E81A4FB730FAD7F27063C8C /* Pods-VelaiaFacegram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VelaiaFacegram.release.xcconfig"; path = "Pods/Target Support Files/Pods-VelaiaFacegram/Pods-VelaiaFacegram.release.xcconfig"; sourceTree = "<group>"; };
 		394106301CD3B576007E1151 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		394106321CD63327007E1151 /* TranslucentTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslucentTextField.swift; sourceTree = "<group>"; };
+		394106341CD640D1007E1151 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		396ABC3B1CC2957F008E4C12 /* VelaiaFacegram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VelaiaFacegram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		396ABC3E1CC2957F008E4C12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		396ABC431CC2957F008E4C12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				399925A71CCD106100F39E09 /* CenterTabBarController.swift */,
 				399925A91CCD175A00F39E09 /* CameraController.swift */,
 				399925AB1CCF308900F39E09 /* CaptionController.swift */,
+				394106341CD640D1007E1151 /* LoginController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				394106351CD640D1007E1151 /* LoginController.swift in Sources */,
 				396ABC581CC95413008E4C12 /* ProfileController.swift in Sources */,
 				394106311CD3B576007E1151 /* Extensions.swift in Sources */,
 				396ABC5A1CC9CA84008E4C12 /* FeedController.swift in Sources */,
