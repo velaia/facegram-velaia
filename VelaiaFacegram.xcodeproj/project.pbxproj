@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		394106311CD3B576007E1151 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394106301CD3B576007E1151 /* Extensions.swift */; };
+		394106331CD63327007E1151 /* TranslucentTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394106321CD63327007E1151 /* TranslucentTextField.swift */; };
 		396ABC3F1CC2957F008E4C12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396ABC3E1CC2957F008E4C12 /* AppDelegate.swift */; };
 		396ABC441CC2957F008E4C12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 396ABC421CC2957F008E4C12 /* Main.storyboard */; };
 		396ABC461CC2957F008E4C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 396ABC451CC2957F008E4C12 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		2E81A4FB730FAD7F27063C8C /* Pods-VelaiaFacegram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VelaiaFacegram.release.xcconfig"; path = "Pods/Target Support Files/Pods-VelaiaFacegram/Pods-VelaiaFacegram.release.xcconfig"; sourceTree = "<group>"; };
 		394106301CD3B576007E1151 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		394106321CD63327007E1151 /* TranslucentTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslucentTextField.swift; sourceTree = "<group>"; };
 		396ABC3B1CC2957F008E4C12 /* VelaiaFacegram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VelaiaFacegram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		396ABC3E1CC2957F008E4C12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		396ABC431CC2957F008E4C12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		396ABC501CC29C1F008E4C12 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				394106321CD63327007E1151 /* TranslucentTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				396ABC5A1CC9CA84008E4C12 /* FeedController.swift in Sources */,
 				399925AC1CCF308900F39E09 /* CaptionController.swift in Sources */,
 				396ABC541CC7E6D0008E4C12 /* PostModel.swift in Sources */,
+				394106331CD63327007E1151 /* TranslucentTextField.swift in Sources */,
 				396ABC3F1CC2957F008E4C12 /* AppDelegate.swift in Sources */,
 				396ABC561CC7E913008E4C12 /* ProfileModel.swift in Sources */,
 				399925AA1CCD175A00F39E09 /* CameraController.swift in Sources */,
