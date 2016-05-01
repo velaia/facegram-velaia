@@ -22,7 +22,33 @@ class LoginController: UIViewController {
     }
     
     func login(email: String, password: String) {
-        
+        firebase.authUser(email, password: password, withCompletionBlock: { error, result in
+            if error != nil {
+                print(error.localizedDescription)
+                self.activityIndicator.stopAnimating()
+                return
+            }
+            let uid = result.uid
+            usernameRef.childByAppendingPath(uid).observeSingleEventOfType(.Value, withBlock: { snapshot in
+                guard let username = snapshot.value as? String else {
+                    print("No user found for \(email)")
+                    self.activityIndicator.stopAnimating()
+                    return
+                }
+                profileRef.childByAppendingPath(username).observeSingleEventOfType(.Value, withBlock: {
+                    snapshot in
+                    self.activityIndicator.stopAnimating()
+                    guard let profile = snapshot.value as? [String: AnyObject] else {
+                        print("No profile found for user")
+                        return
+                    }
+                    Profile.currentUser = Profile.initWithUsername(username, profileDict: profile)
+                    let mainSB = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+                    let rootController = mainSB.instantiateViewControllerWithIdentifier("Tabs") // Initialize CenterTabBarController
+                    self.presentViewController(rootController, animated: true, completion: nil)
+                })
+            })
+        })
     }
     
     @IBAction func loginTapped(button: UIButton!) {
