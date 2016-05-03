@@ -10,6 +10,7 @@
 		394106311CD3B576007E1151 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394106301CD3B576007E1151 /* Extensions.swift */; };
 		394106331CD63327007E1151 /* TranslucentTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394106321CD63327007E1151 /* TranslucentTextField.swift */; };
 		394106351CD640D1007E1151 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394106341CD640D1007E1151 /* LoginController.swift */; };
+		394106371CD68CE8007E1151 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394106361CD68CE8007E1151 /* RegisterController.swift */; };
 		396ABC3F1CC2957F008E4C12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396ABC3E1CC2957F008E4C12 /* AppDelegate.swift */; };
 		396ABC441CC2957F008E4C12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 396ABC421CC2957F008E4C12 /* Main.storyboard */; };
 		396ABC461CC2957F008E4C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 396ABC451CC2957F008E4C12 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		394106301CD3B576007E1151 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		394106321CD63327007E1151 /* TranslucentTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslucentTextField.swift; sourceTree = "<group>"; };
 		394106341CD640D1007E1151 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		394106361CD68CE8007E1151 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		396ABC3B1CC2957F008E4C12 /* VelaiaFacegram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VelaiaFacegram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		396ABC3E1CC2957F008E4C12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		396ABC431CC2957F008E4C12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				399925A91CCD175A00F39E09 /* CameraController.swift */,
 				399925AB1CCF308900F39E09 /* CaptionController.swift */,
 				394106341CD640D1007E1151 /* LoginController.swift */,
+				394106361CD68CE8007E1151 /* RegisterController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				396ABC541CC7E6D0008E4C12 /* PostModel.swift in Sources */,
 				394106331CD63327007E1151 /* TranslucentTextField.swift in Sources */,
 				396ABC3F1CC2957F008E4C12 /* AppDelegate.swift in Sources */,
+				394106371CD68CE8007E1151 /* RegisterController.swift in Sources */,
 				396ABC561CC7E913008E4C12 /* ProfileModel.swift in Sources */,
 				399925AA1CCD175A00F39E09 /* CameraController.swift in Sources */,
 				399925A81CCD106100F39E09 /* CenterTabBarController.swift in Sources */,

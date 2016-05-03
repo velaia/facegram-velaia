@@ -63,7 +63,19 @@ class LoginController: UIViewController {
     @IBAction func signupTapped(button: UIButton!) {
         let mainSB = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
         let registerController = mainSB.instantiateViewControllerWithIdentifier("Register")
-            as! UIViewController // Make sure to set register view controller id to 'Register'
+            as! RegisterController // Make sure to set register view controller id to 'Register'
+        registerController.delegate = self
         presentViewController(registerController, animated: true, completion: nil)
+    }
+}
+
+extension LoginController: RegisterControllerDelegate {
+    func registerControllerDidCancel(controller: RegisterController) {
+        controller.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func registerControllerDidFinish(controller: RegisterController, withEmail email: String) {
+        usernameField.text = email
+        controller.dismissViewControllerAnimated(true, completion: nil)
     }
 }
