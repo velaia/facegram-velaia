@@ -216,6 +216,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="USERNAME" id="Uvg-Zj-Rj3"/>
                     <connections>
+                        <outlet property="actionButton" destination="gLe-8s-bZS" id="97f-t8-scE"/>
                         <outlet property="followersLabel" destination="eTP-ek-dHh" id="Svu-iN-6if"/>
                         <outlet property="followingLabel" destination="k1a-gm-L0s" id="If8-zQ-6QQ"/>
                         <outlet property="postsLabel" destination="t99-sy-bP5" id="r3p-85-Tun"/>

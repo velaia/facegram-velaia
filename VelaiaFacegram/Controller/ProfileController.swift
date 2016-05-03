@@ -8,6 +8,12 @@
 
 import UIKit
 
+enum ActionButtonState: String {
+    case CurrentUser = "Edit Profile"
+    case NotFollowing = "+ Follow"
+    case Following = "✓ Following"
+}
+
 class ProfileController: UIViewController {
     @IBOutlet weak var profilePic:UIImageView!
     @IBOutlet weak var postsLabel:UILabel!
@@ -16,6 +22,23 @@ class ProfileController: UIViewController {
     @IBOutlet weak var actionButton:UIButton!
     var profileUsername = Profile.currentUser?.username // Show currentUser by default
     var userProfile: Profile? // Fetch a user's profile if necessary
+    var actionButtonState: ActionButtonState = .CurrentUser {
+        willSet(newState) {
+            switch newState {
+            case .CurrentUser:
+                actionButton.backgroundColor = UIColor.rawColor(red: 228, green: 228, blue: 228, alpha: 1.0)
+                actionButton.layer.borderWidth = 1
+            case .NotFollowing:
+                actionButton.backgroundColor = UIColor.whiteColor()
+                actionButton.layer.borderColor = UIColor.rawColor(red: 18, green: 86, blue: 136, alpha: 1.0).CGColor
+                actionButton.layer.borderWidth = 1
+            case .Following:
+                actionButton.backgroundColor = UIColor.rawColor(red: 111, green: 187, blue: 82, alpha: 1.0)
+                actionButton.layer.borderWidth = 0
+            }
+            actionButton.setTitle(newState.rawValue, forState: .Normal)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,8 +60,10 @@ class ProfileController: UIViewController {
             if username != Profile.currentUser?.username {
                 if self.userProfile!.followers.contains(Profile.currentUser!.username) {
                     // Following
+                    self.actionButtonState = .Following
                 } else {
                     // Not following
+                    self.actionButtonState = .NotFollowing
                 }
             }
             self.updateProfile()
