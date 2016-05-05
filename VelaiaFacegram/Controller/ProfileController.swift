@@ -74,17 +74,7 @@ class ProfileController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        if let currentUser = Profile.currentUser {
-            navigationController?.navigationBar.topItem?.title = currentUser.username
-            self.postsLabel.text = "\(currentUser.posts.count)" // "5" 5 - just a string containing the count of posts
-            self.followersLabel.text = "\(currentUser.followers.count)"
-            self.followingLabel.text = "\(currentUser.following.count)"
-            if let profilePic = currentUser.picture {
-                self.profilePic.image = profilePic
-            }
-        } else {
-            print("No user is logged in")
-        }
+        navigationItem.title = profileUsername
     }
     
     func updateProfile() {
@@ -98,5 +88,43 @@ class ProfileController: UIViewController {
     
     @IBAction func editProfile(sender:AnyObject) {
         print("User wants to edit their profile")
+        switch actionButtonState {
+        case .CurrentUser:
+            let actionSheet = UIAlertController(title: "Edit Profile", message: nil, preferredStyle: .ActionSheet)
+            let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+            let photoAction = UIAlertAction(title: "Change Photo", style: .Default, handler: { action in
+                let picker = UIImagePickerController()
+                picker.allowsEditing = true
+                picker.sourceType = .PhotoLibrary
+                picker.delegate = self
+                self.presentViewController(picker, animated: true, completion: nil)
+            })
+            actionSheet.addAction(cancelAction)
+            actionSheet.addAction(photoAction)
+            self.presentViewController(actionSheet, animated: true, completion: nil)
+        case .NotFollowing:
+            actionButtonState = .Following
+            Profile.currentUser?.following.append(userProfile!.username)
+            userProfile?.followers.append(Profile.currentUser!.username)
+            // Sync these changes to Firebase ...
+        case .Following:
+            actionButtonState = .NotFollowing
+            if let index = Profile.currentUser?.following.indexOf(profileUsername!) {
+                Profile.currentUser?.following.removeAtIndex(index)
+            }
+            if let index = userProfile?.followers.indexOf((Profile.currentUser?.username)!) {
+                userProfile?.followers.removeAtIndex(index)
+            }
+            // Sync these deletions to Firebase ...
+        }
+    }
+}
+
+extension ProfileController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        userProfile?.picture = info[UIImagePickerControllerEditedImage] as? UIImage
+        profilePic.image = userProfile?.picture
+        // Sync these changes to Firebase ...
+        picker.dismissViewControllerAnimated(true, completion: nil)
     }
 }
