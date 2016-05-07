@@ -63,5 +63,9 @@ class Profile {
         
         return profileDict
     }
+    
+    func sync() {
+        profileRef.childByAppendingPath(username).setValue(dictValue())
+    }
 }
 

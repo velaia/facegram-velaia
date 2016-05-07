@@ -106,7 +106,8 @@ class ProfileController: UIViewController {
             actionButtonState = .Following
             Profile.currentUser?.following.append(userProfile!.username)
             userProfile?.followers.append(Profile.currentUser!.username)
-            // Sync these changes to Firebase ...
+            userProfile?.sync()
+            Profile.currentUser?.sync()
         case .Following:
             actionButtonState = .NotFollowing
             if let index = Profile.currentUser?.following.indexOf(profileUsername!) {
@@ -115,7 +116,8 @@ class ProfileController: UIViewController {
             if let index = userProfile?.followers.indexOf((Profile.currentUser?.username)!) {
                 userProfile?.followers.removeAtIndex(index)
             }
-            // Sync these deletions to Firebase ...
+            userProfile?.sync()
+            Profile.currentUser?.sync()
         }
     }
 }
@@ -124,7 +126,7 @@ extension ProfileController: UIImagePickerControllerDelegate, UINavigationContro
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         userProfile?.picture = info[UIImagePickerControllerEditedImage] as? UIImage
         profilePic.image = userProfile?.picture
-        // Sync these changes to Firebase ...
+        userProfile?.sync()
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
 }
